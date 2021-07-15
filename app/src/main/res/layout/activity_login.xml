@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:backgroundTint="@null"
+                android:background="@drawable/ic_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppinslight"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="Masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:fontFamily="@font/poppinslight"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="#00aa13"
+                android:backgroundTint="@null"
+                android:text="Daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"
+            android:text="Masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="Silahkan masuk menggunakan email kamu yang sudah terdaftar ya..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="25dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            android:text="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:maxLength="30"
+            android:id="@+id/txtemail"
+            android:drawableEnd="@drawable/ic_email"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"
+            android:textSize="14dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="agrio@gmail.com"
+            android:background="@drawable/bg_text_view_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            android:text="Kata Sandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:id="@+id/txtpassword"
+            android:drawableEnd="@drawable/ic_lock"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"
+            android:textSize="14dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_text_view_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="#00aa13"
+            android:fontFamily="@font/poppinslight"
+            android:text="Lupa kata sandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="18dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            android:text="Masuk"
+            android:background="@drawable/bg_btn1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="5dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Butuh bantuan?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="5dp"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#00aa13"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Hubungi Call Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

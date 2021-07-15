@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00aa13"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn2"
+            android:padding="10dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn2"
+            android:padding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn2"
+            android:padding="10dp"
+            android:hint="Nomor Telepon"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn2"
+            android:padding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:backgroundTint="@null"
+            android:background="@drawable/bg_btn1"
+            android:text="Sign In" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:background="#00aa13" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-32dp"
+        android:textAlignment="center"
+        android:background="#ffffff"
+        android:text="atau"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_test_button"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_test_button"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_test_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

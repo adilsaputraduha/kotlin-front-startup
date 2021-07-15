@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.ChatFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dibaca"
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:text="Dibaca"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <TextView
+                android:id="@+id/blmdibaca"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Belum Dibaca"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
